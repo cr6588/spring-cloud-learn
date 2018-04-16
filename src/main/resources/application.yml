@@ -1,0 +1,25 @@
+spring:
+    profiles: dev
+    datasource:
+        name: test
+        url: jdbc:mysql://user.mysql.jtongi.cn/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: XeXlmgyLLZ5VK8GKS
+        type: com.alibaba.druid.pool.DruidDataSource
+        initialSize: 1
+        minIdle: 1
+        maxActive: 20
+        maxWait: 60000
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: SELECT 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: false
+        maxPoolPreparedStatementPerConnectionSize: 20
+        filters: stat
+mybatis:
+    config-location: classpath:sqlMapConfig.xml
+    mapper-locations: classpath*:com/cr6588/dao/mapper/*.xml
+#    plugins: com.sjdf.erp.facade.limit.MybatisLimit
