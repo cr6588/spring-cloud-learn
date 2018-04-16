@@ -3,6 +3,7 @@ package com.cr6588;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 /**
@@ -11,6 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @SpringBootApplication
 @EnableTransactionManagement 
 @MapperScan("com.cr6588.dao")
+@ImportResource({"classpath:dubbo-provider.xml"})
 public class App {
 
     public static void main(String[] args) throws Exception {
