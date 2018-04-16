@@ -27,3 +27,9 @@
 2018-04-16 20:18:52 - INFO - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started App in 3.856 seconds (JVM running for 4.106)
 2018-04-16 20:20:38 - INFO - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting App on cr-PC with PID 18408 (D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer\target\classes started by cr in D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer)
 2018-04-16 20:20:38 - INFO - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:597) - The following profiles are active: dev
+2018-04-16 20:48:11 - INFO - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting App on cr-PC with PID 15812 (D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer\target\classes started by cr in D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer)
+2018-04-16 20:48:11 - INFO - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:597) - The following profiles are active: dev
+2018-04-16 20:48:15 - INFO - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started App in 4.095 seconds (JVM running for 4.355)
+2018-04-16 20:49:39 - INFO - org.springframework.boot.StartupInfoLogger.logStarting(StartupInfoLogger.java:48) - Starting App on cr-PC with PID 7676 (D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer\target\classes started by cr in D:\cloud\spring-cloud-learn\spring-cloud-dubbo-consumer)
+2018-04-16 20:49:39 - INFO - org.springframework.boot.SpringApplication.logStartupProfileInfo(SpringApplication.java:597) - The following profiles are active: dev
+2018-04-16 20:49:42 - INFO - org.springframework.boot.StartupInfoLogger.logStarted(StartupInfoLogger.java:57) - Started App in 3.673 seconds (JVM running for 3.926)
