@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cr6588</groupId>
     <artifactId>spring-cloud-learn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <packaging>pom</packaging>
     <name>spring-cloud-learn</name>
     <url>http://maven.apache.org</url>
@@ -13,7 +13,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
-        <relativePath /> <!-- lookup parent from repository -->
+        <relativePath />
     </parent>
     <dependencies>
         <dependency>
@@ -61,11 +61,6 @@
             <artifactId>slf4j-log4j12</artifactId>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
@@ -94,5 +89,7 @@
     </dependencies>
     <modules>
         <module>spring-boot-mybatis-xml</module>
+        <module>spring-beans</module>
+        <module>spring-cloud-dubbo-consumer</module>
     </modules>
 </project>

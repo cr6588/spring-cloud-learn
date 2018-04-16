@@ -14,7 +14,7 @@ import com.cr6588.service.UserService;
  * @category TODO
  * @author chenyi
  */
-@Service
+@Service("userService")
 public class UserServiceImpl implements UserService {
 
     @Autowired
