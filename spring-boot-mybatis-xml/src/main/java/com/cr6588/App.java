@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Lazy;
 @SpringBootApplication
 //@EnableTransactionManagement 
 @MapperScan("com.cr6588.dao")
-@ImportResource({"classpath:dubbo-consumer.xml", "classpath:dubbo-provider.xml"})
+//@ImportResource({"classpath:dubbo-provider.xml"})
 public class App {
 
     public static void main(String[] args) throws Exception {

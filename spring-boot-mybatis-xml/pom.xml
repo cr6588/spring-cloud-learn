@@ -24,26 +24,6 @@
 <!--             <optional>true</optional> -->
 <!--         </dependency> -->
         <dependency>
-            <groupId>com.sjdf</groupId>
-            <artifactId>erp-facade</artifactId>
-            <version>1.0.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.mybatis</groupId>
-                    <artifactId>mybatis</artifactId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.mybatis</groupId>
-                    <artifactId>mybatis-spring</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>com.sjdf</groupId>
-            <artifactId>erp-common</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-        <dependency>
             <groupId>com.cr6588</groupId>
             <artifactId>spring-beans</artifactId>
             <version>0.0.1</version>
