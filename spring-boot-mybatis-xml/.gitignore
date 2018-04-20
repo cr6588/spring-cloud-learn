@@ -1,2 +1,5 @@
 /target/
-/spring-cloud.log
+/.settings/
+/.classpath
+/.project
+/*.log
