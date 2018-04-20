@@ -23,10 +23,5 @@
             <artifactId>spring-beans</artifactId>
             <version>0.0.1</version>
         </dependency>
-<!--         <dependency> -->
-<!--             <groupId>io.dubbo.springboot</groupId> -->
-<!--             <artifactId>spring-boot-starter-dubbo</artifactId> -->
-<!--             <version>1.0.0</version> -->
-<!--         </dependency> -->
     </dependencies>
 </project>

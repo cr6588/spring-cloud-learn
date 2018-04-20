@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <properties>
+        <property name="dialect" value="mysql" />
+    </properties>
+    <settings>
+        <setting name="logPrefix" value="dao."/>
+<!--    使用LOG4J打印日志 -->
+<!--         <setting name="logImpl" value="LOG4J"/> -->
+<!--     使用logback打印日志 -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>  
+    </settings>
+    <typeAliases>
+        <typeAlias alias="string" type="java.lang.String" />
+        <typeAlias alias="long" type="java.lang.Long" />
+        <typeAlias alias="date" type="java.util.Date" />
+        <typeAlias alias="map" type="java.util.Map" />
+        <typeAlias alias="list" type="java.util.List" />
+        <typeAlias alias="linkMap" type="java.util.LinkedHashMap" />
+
+        <package name="com.cr6588.bean"/>
+    </typeAliases>
+</configuration>

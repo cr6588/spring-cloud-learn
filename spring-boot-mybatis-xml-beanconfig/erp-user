@@ -1,0 +1,60 @@
+2018-04-20 15:09:24 - INFO - Starting UserServiceTest on cr-PC with PID 15148 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 15:09:24 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 15:09:26 - INFO - Started UserServiceTest in 2.023 seconds (JVM running for 2.481)
+2018-04-20 15:10:06 - INFO - Starting UserServiceTest on cr-PC with PID 15672 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 15:10:06 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 15:10:08 - INFO - Started UserServiceTest in 2.079 seconds (JVM running for 2.547)
+2018-04-20 15:10:18 - INFO - Starting UserServiceTest on cr-PC with PID 16004 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 15:10:18 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 15:10:20 - INFO - Started UserServiceTest in 2.06 seconds (JVM running for 2.533)
+2018-04-20 16:00:28 - INFO - Starting App on cr-PC with PID 14100 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:00:28 - INFO - The following profiles are active: dev
+2018-04-20 16:01:46 - INFO - Starting App on cr-PC with PID 13888 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:01:46 - INFO - The following profiles are active: dev
+2018-04-20 16:02:33 - INFO - Starting App on cr-PC with PID 15704 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:02:33 - INFO - The following profiles are active: dev
+2018-04-20 16:10:49 - INFO - Starting App on cr-PC with PID 7860 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:10:49 - INFO - The following profiles are active: dev
+2018-04-20 16:14:33 - INFO - Starting App on cr-PC with PID 15592 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:14:33 - INFO - The following profiles are active: dev
+2018-04-20 16:14:59 - INFO - Starting App on cr-PC with PID 10848 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:14:59 - INFO - The following profiles are active: dev
+2018-04-20 16:18:11 - INFO - Starting App on cr-PC with PID 11804 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:18:11 - INFO - The following profiles are active: dev
+2018-04-20 16:20:01 - INFO - Starting App on cr-PC with PID 15836 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:20:01 - INFO - The following profiles are active: dev
+2018-04-20 16:20:42 - INFO - Starting App on cr-PC with PID 12236 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:20:42 - INFO - The following profiles are active: dev
+2018-04-20 16:21:45 - INFO - Starting App on cr-PC with PID 7400 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:21:45 - INFO - The following profiles are active: dev
+2018-04-20 16:22:43 - INFO - Starting App on cr-PC with PID 10592 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:22:43 - INFO - The following profiles are active: dev
+2018-04-20 16:22:55 - INFO - Starting App on cr-PC with PID 9780 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:22:55 - INFO - The following profiles are active: dev
+2018-04-20 16:31:43 - INFO - Starting App on cr-PC with PID 17212 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:31:43 - INFO - The following profiles are active: dev
+2018-04-20 16:32:37 - INFO - Starting App on cr-PC with PID 14080 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:32:37 - INFO - The following profiles are active: dev
+2018-04-20 16:33:03 - INFO - Starting App on cr-PC with PID 17000 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:33:03 - INFO - The following profiles are active: dev
+2018-04-20 16:33:25 - INFO - Starting App on cr-PC with PID 14884 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 16:33:25 - INFO - The following profiles are active: dev
+2018-04-20 17:00:47 - INFO - Starting App on cr-PC with PID 16908 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:00:47 - INFO - The following profiles are active: dev
+2018-04-20 17:07:42 - INFO - Starting App on cr-PC with PID 16936 (D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:07:42 - INFO - The following profiles are active: dev
+2018-04-20 17:07:45 - INFO - Started App in 3.158 seconds (JVM running for 3.466)
+2018-04-20 17:09:32 - INFO - Starting UserServiceTest on cr-PC with PID 16400 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:09:32 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 17:09:34 - INFO - Started UserServiceTest in 2.322 seconds (JVM running for 2.826)
+2018-04-20 17:10:36 - INFO - Starting UserServiceTest on cr-PC with PID 15292 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:10:36 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 17:10:38 - INFO - Started UserServiceTest in 2.344 seconds (JVM running for 2.851)
+2018-04-20 17:10:52 - INFO - Starting UserServiceTest on cr-PC with PID 14772 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:10:52 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 17:11:30 - INFO - Starting UserServiceTest on cr-PC with PID 8260 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:11:30 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 17:11:32 - INFO - Started UserServiceTest in 2.394 seconds (JVM running for 2.903)
+2018-04-20 17:11:36 - INFO - Starting UserServiceTest on cr-PC with PID 12284 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis-xml-beanconfig)
+2018-04-20 17:11:36 - INFO - No active profile set, falling back to default profiles: default
+2018-04-20 17:11:38 - INFO - Started UserServiceTest in 2.323 seconds (JVM running for 2.821)
