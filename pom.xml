@@ -65,6 +65,7 @@
         <module>spring-beans</module>
         <module>spring-cloud-dubbo-consumer</module>
         <module>spring-boot-mybatis-xml-beanconfig</module>
+        <module>spring-boot-mybatis-xml-beanconfig-yml</module>
     </modules>
     <build>
         <plugins>
