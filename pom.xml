@@ -18,10 +18,6 @@
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
@@ -66,6 +62,7 @@
         <module>spring-cloud-dubbo-consumer</module>
         <module>spring-boot-mybatis-xml-beanconfig</module>
         <module>spring-boot-mybatis-xml-beanconfig-yml</module>
+        <module>spring-boot-mybatis-nontomcat</module>
     </modules>
     <build>
         <plugins>
