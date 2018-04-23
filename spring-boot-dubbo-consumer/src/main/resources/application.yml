@@ -1,0 +1,7 @@
+server:
+    port: 9090
+spring:
+    profiles: dev
+
+logging:
+    config: classpath:logback-dev.xml

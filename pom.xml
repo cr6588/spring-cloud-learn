@@ -13,12 +13,16 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.10.RELEASE</version>
-        <relativePath />
+        <relativePath/>
     </parent>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -59,10 +63,11 @@
     <modules>
         <module>spring-boot-mybatis-xml</module>
         <module>spring-beans</module>
-        <module>spring-cloud-dubbo-consumer</module>
+        <module>spring-boot-dubbo-consumer</module>
         <module>spring-boot-mybatis-xml-beanconfig</module>
         <module>spring-boot-mybatis-xml-beanconfig-yml</module>
         <module>spring-boot-mybatis-nontomcat</module>
+        <module>spring-boot-mybatis</module>
     </modules>
     <build>
         <plugins>

@@ -1,5 +1,4 @@
 spring:
-    profiles: dev
     datasource:
         name: test
         url: jdbc:mysql://localhost/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8
