@@ -3,26 +3,16 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>com.cr6588</groupId>
-        <artifactId>spring-cloud-learn</artifactId>
+        <artifactId>spring-boot-mybatis</artifactId>
         <version>0.0.1</version>
     </parent>
-    <artifactId>spring-boot-dubbo-consumer</artifactId>
+    <artifactId>spring-boot-mybatis-dubbo-consumer</artifactId>
     <name>spring-boot-dubbo-consumer</name>
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.cr6588</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>0.0.1</version>
-        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

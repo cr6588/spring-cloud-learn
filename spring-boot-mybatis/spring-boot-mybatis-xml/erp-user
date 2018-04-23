@@ -1,0 +1,6 @@
+2018-04-23 20:18:42 - INFO - Starting UserServiceTest on cr-PC with PID 18896 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-23 20:18:42 - INFO - No active profile set, falling back to default profiles: default
+2018-04-23 20:19:54 - INFO - Starting UserServiceTest on cr-PC with PID 21180 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-23 20:19:54 - INFO - No active profile set, falling back to default profiles: default
+2018-04-23 20:20:21 - INFO - Starting App on cr-PC with PID 21380 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-23 20:20:21 - INFO - The following profiles are active: dev

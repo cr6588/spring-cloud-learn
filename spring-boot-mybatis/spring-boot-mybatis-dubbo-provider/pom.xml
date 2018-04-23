@@ -6,42 +6,12 @@
         <artifactId>spring-boot-mybatis</artifactId>
         <version>0.0.1</version>
     </parent>
-    <artifactId>spring-boot-mybatis-nontomcat</artifactId>
+    <artifactId>spring-boot-mybatis-dubbo-provider</artifactId>
     <name>spring-boot-mybatis-nontomcat</name>
     <url>http://maven.apache.org</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-orm</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis</artifactId>
-            <version>3.2.7</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mybatis</groupId>
-            <artifactId>mybatis-spring</artifactId>
-            <version>1.2.2</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>com.cr6588</groupId>
-            <artifactId>spring-beans</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-    </dependencies>
     <build>
         <resources>
             <resource>
