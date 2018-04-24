@@ -1,6 +1,120 @@
-2018-04-23 20:18:42 - INFO - Starting UserServiceTest on cr-PC with PID 18896 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
-2018-04-23 20:18:42 - INFO - No active profile set, falling back to default profiles: default
-2018-04-23 20:19:54 - INFO - Starting UserServiceTest on cr-PC with PID 21180 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
-2018-04-23 20:19:54 - INFO - No active profile set, falling back to default profiles: default
-2018-04-23 20:20:21 - INFO - Starting App on cr-PC with PID 21380 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
-2018-04-23 20:20:21 - INFO - The following profiles are active: dev
+2018-04-24 09:25:41 - INFO - Starting App on cr-PC with PID 6176 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:25:41 - INFO - The following profiles are active: dev
+2018-04-24 09:27:00 - INFO - Starting App on cr-PC with PID 5168 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:27:00 - INFO - The following profiles are active: dev
+2018-04-24 09:27:42 - INFO - Starting App on cr-PC with PID 2716 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:27:42 - INFO - The following profiles are active: dev
+2018-04-24 09:42:11 - INFO - Starting App on cr-PC with PID 5380 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:42:11 - INFO - The following profiles are active: dev
+2018-04-24 09:43:56 - INFO - Starting App on cr-PC with PID 5640 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:43:56 - INFO - The following profiles are active: dev
+2018-04-24 09:43:58 - INFO - Started App in 2.645 seconds (JVM running for 2.903)
+2018-04-24 09:47:45 - INFO - Starting App on cr-PC with PID 7068 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:47:45 - INFO - The following profiles are active: dev
+2018-04-24 09:47:59 - INFO - Starting App on cr-PC with PID 6396 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:47:59 - INFO - The following profiles are active: dev
+2018-04-24 09:48:38 - INFO - Starting App on cr-PC with PID 6896 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:48:38 - INFO - The following profiles are active: dev
+2018-04-24 09:48:41 - INFO - Started App in 2.666 seconds (JVM running for 2.912)
+2018-04-24 09:51:36 - INFO - Starting App on cr-PC with PID 2812 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:51:36 - INFO - The following profiles are active: dev
+2018-04-24 09:52:55 - INFO - Starting App on cr-PC with PID 6764 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:52:55 - INFO - The following profiles are active: dev
+2018-04-24 09:57:36 - INFO - Starting App on cr-PC with PID 6500 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:57:36 - INFO - The following profiles are active: dev
+2018-04-24 09:57:39 - INFO - Started App in 2.615 seconds (JVM running for 2.883)
+2018-04-24 09:57:58 - INFO - Starting App on cr-PC with PID 6984 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:57:58 - INFO - The following profiles are active: dev
+2018-04-24 09:59:04 - INFO - Starting UserServiceTest on cr-PC with PID 5744 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:59:04 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 09:59:06 - INFO - Started UserServiceTest in 1.984 seconds (JVM running for 2.431)
+2018-04-24 09:59:45 - INFO - Starting UserServiceTest on cr-PC with PID 1440 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 09:59:45 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 09:59:47 - INFO - Started UserServiceTest in 2.322 seconds (JVM running for 2.858)
+2018-04-24 10:02:37 - INFO - Starting UserServiceTest on cr-PC with PID 4904 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:02:37 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:02:39 - INFO - Started UserServiceTest in 1.936 seconds (JVM running for 2.496)
+2018-04-24 10:12:19 - INFO - Starting UserServiceTest on cr-PC with PID 5704 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:12:19 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:12:21 - INFO - Started UserServiceTest in 2.104 seconds (JVM running for 2.759)
+2018-04-24 10:17:11 - INFO - Starting App on cr-PC with PID 7828 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:17:11 - INFO - The following profiles are active: dev
+2018-04-24 10:17:14 - INFO - Started App in 2.764 seconds (JVM running for 3.018)
+2018-04-24 10:17:45 - INFO - Starting App on cr-PC with PID 7808 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:17:45 - INFO - The following profiles are active: dev
+2018-04-24 10:17:48 - INFO - Started App in 2.607 seconds (JVM running for 2.855)
+2018-04-24 10:19:52 - INFO - Starting UserServiceTest on cr-PC with PID 8044 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:19:52 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:19:53 - INFO - Started UserServiceTest in 2.065 seconds (JVM running for 2.515)
+2018-04-24 10:20:52 - INFO - Starting App on cr-PC with PID 5532 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:20:52 - INFO - The following profiles are active: dev
+2018-04-24 10:20:55 - INFO - Started App in 2.668 seconds (JVM running for 2.925)
+2018-04-24 10:23:25 - INFO - Starting UserServiceTest on cr-PC with PID 8128 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:23:25 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:23:27 - INFO - Started UserServiceTest in 2.171 seconds (JVM running for 2.621)
+2018-04-24 10:25:39 - INFO - Starting UserServiceTest on cr-PC with PID 6908 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:25:39 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:25:40 - INFO - Started UserServiceTest in 2.129 seconds (JVM running for 2.565)
+2018-04-24 10:26:03 - INFO - Starting UserServiceTest on cr-PC with PID 7128 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:26:03 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:26:05 - INFO - Started UserServiceTest in 2.063 seconds (JVM running for 2.51)
+2018-04-24 10:27:36 - INFO - Starting UserServiceTest on cr-PC with PID 7224 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:27:36 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:27:37 - INFO - Started UserServiceTest in 1.96 seconds (JVM running for 2.408)
+2018-04-24 10:28:23 - INFO - Starting UserServiceTest on cr-PC with PID 2808 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:28:23 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:28:25 - INFO - Started UserServiceTest in 2.113 seconds (JVM running for 2.59)
+2018-04-24 10:32:09 - INFO - Starting UserServiceTest on cr-PC with PID 2568 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:32:09 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:32:10 - INFO - Started UserServiceTest in 2.041 seconds (JVM running for 2.503)
+2018-04-24 10:35:29 - INFO - Starting UserServiceTest on cr-PC with PID 440 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:35:29 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:35:31 - INFO - Started UserServiceTest in 2.246 seconds (JVM running for 2.715)
+2018-04-24 10:45:19 - INFO - Starting App on cr-PC with PID 828 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:45:19 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:45:21 - INFO - Started App in 2.578 seconds (JVM running for 2.824)
+2018-04-24 10:48:20 - INFO - Starting UserServiceTest on cr-PC with PID 3744 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:48:20 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:48:22 - INFO - Started UserServiceTest in 2.306 seconds (JVM running for 2.764)
+2018-04-24 10:48:32 - INFO - Starting App on cr-PC with PID 6648 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:48:32 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:48:35 - INFO - Started App in 2.485 seconds (JVM running for 2.738)
+2018-04-24 10:50:55 - INFO - Starting UserServiceTest on cr-PC with PID 7472 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:50:55 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:50:57 - INFO - Started UserServiceTest in 2.071 seconds (JVM running for 2.513)
+2018-04-24 10:51:27 - INFO - Starting App on cr-PC with PID 7884 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:51:27 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:51:29 - INFO - Started App in 2.596 seconds (JVM running for 2.848)
+2018-04-24 10:51:38 - INFO - Starting App on cr-PC with PID 6512 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:51:38 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:51:41 - INFO - Started App in 2.558 seconds (JVM running for 2.808)
+2018-04-24 10:52:35 - INFO - Starting App on cr-PC with PID 6752 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:52:35 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:52:38 - INFO - Started App in 2.613 seconds (JVM running for 2.863)
+2018-04-24 10:53:23 - INFO - Starting App on cr-PC with PID 2860 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:53:23 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:53:25 - INFO - Started App in 2.701 seconds (JVM running for 2.948)
+2018-04-24 10:53:50 - INFO - Starting App on cr-PC with PID 1048 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:53:50 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:53:52 - INFO - Started App in 2.562 seconds (JVM running for 2.813)
+2018-04-24 10:55:06 - INFO - Starting App on cr-PC with PID 6688 (D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml\target\classes started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:55:06 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:55:09 - INFO - Started App in 2.7 seconds (JVM running for 2.95)
+2018-04-24 10:55:29 - INFO - Starting UserServiceTest on cr-PC with PID 3748 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:55:29 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:55:31 - INFO - Started UserServiceTest in 2.008 seconds (JVM running for 2.449)
+2018-04-24 10:56:58 - INFO - Starting UserServiceTest on cr-PC with PID 6492 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:56:58 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:57:00 - INFO - Started UserServiceTest in 1.935 seconds (JVM running for 2.397)
+2018-04-24 10:58:49 - INFO - Starting UserServiceTest on cr-PC with PID 6808 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 10:58:49 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 10:58:51 - INFO - Started UserServiceTest in 2.016 seconds (JVM running for 2.469)
+2018-04-24 11:03:43 - INFO - Starting UserServiceTest on cr-PC with PID 6760 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 11:03:43 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 11:03:44 - INFO - Started UserServiceTest in 1.918 seconds (JVM running for 2.362)
+2018-04-24 11:26:21 - INFO - Starting UserServiceTest on cr-PC with PID 5876 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 11:26:21 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 11:26:23 - INFO - Started UserServiceTest in 2.029 seconds (JVM running for 2.481)
+2018-04-24 11:28:20 - INFO - Starting UserServiceTest on cr-PC with PID 7096 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 11:28:20 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 11:28:22 - INFO - Started UserServiceTest in 1.964 seconds (JVM running for 2.459)

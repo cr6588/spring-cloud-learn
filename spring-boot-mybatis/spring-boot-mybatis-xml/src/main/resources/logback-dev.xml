@@ -27,10 +27,10 @@
     <logger name="com.cr6588"  level="info" >
         <appender-ref ref="A2"/>
     </logger>
-    <Logger name="org.apache.zookeeper" level="error" />
-    <Logger name="com.alibaba.dubbo" level="error" />
-    <Logger name="org.springframework" level="error" />
-    <root level="error">
+    <Logger name="org.apache.zookeeper" level="info" />
+    <Logger name="com.alibaba.dubbo" level="info" />
+    <Logger name="org.springframework" level="info" />
+    <root level="info">
         <appender-ref ref="A1" />
     </root>
 

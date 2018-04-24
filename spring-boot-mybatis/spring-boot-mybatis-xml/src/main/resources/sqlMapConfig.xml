@@ -7,9 +7,9 @@
     <settings>
         <setting name="logPrefix" value="dao."/>
 <!--    使用LOG4J打印日志 -->
-        <setting name="logImpl" value="LOG4J"/>
+<!--         <setting name="logImpl" value="LOG4J"/> -->
 <!--     使用logback打印日志 -->
-<!--         <setting name="logImpl" value="STDOUT_LOGGING"/>   -->
+        <setting name="logImpl" value="STDOUT_LOGGING"/>  
     </settings>
     <typeAliases>
         <typeAlias alias="string" type="java.lang.String" />
