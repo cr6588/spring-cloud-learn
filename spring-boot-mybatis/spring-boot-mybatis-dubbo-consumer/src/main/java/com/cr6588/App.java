@@ -1,20 +1,23 @@
 package com.cr6588;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.ImportResource;
 
 /**
  * Hello world!
  */
 @SpringBootApplication
-@ImportResource({"classpath:dubbo-consumer.xml"})
 public class App {
 
     public static void main(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(App.class);
-        //启动dev配置文件
-        app.setAdditionalProfiles("dev");   // dev 或prod
+//        //启动dev配置文件
+//        Map<String, Object> defaultProperties = new HashMap<String, Object>();
+//        defaultProperties.put("spring.profiles.active", "dev");
+//        app.setDefaultProperties(defaultProperties);
         app.run(args);
     }
 }

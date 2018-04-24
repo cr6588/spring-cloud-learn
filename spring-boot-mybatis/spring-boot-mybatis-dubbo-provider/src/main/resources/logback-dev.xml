@@ -9,9 +9,9 @@
     </appender>
 
     <appender name="A2" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>spring-boot-mybatis-xml-beanconfig-yml.log</file>
+        <file>spring-boot-mybatis-dubbo-provider.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>spring-boot-mybatis-xml-beanconfig-yml_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>spring-boot-mybatis-dubbo-provider_%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- each file should be at most 100MB, keep 60 days worth of history, but at most 20GB -->  
             <maxFileSize>4096KB</maxFileSize>  
             <maxHistory>30</maxHistory>

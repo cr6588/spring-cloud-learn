@@ -6,8 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.alibaba.dubbo.config.annotation.Reference;
 import com.cr6588.bean.User;
-import com.cr6588.service.UserService;
+import com.cr6588.facade.UserFacade;
 
 /**
  * create in 2018年04月16日
@@ -17,11 +18,11 @@ import com.cr6588.service.UserService;
 @RestController
 public class UserController {
 
-    @Autowired
-    private UserService userService;
+    @Reference
+    private UserFacade userFacade;
 
     @RequestMapping("/getUserList")
     List<User> get() {
-        return userService.getUserList();
+        return userFacade.getUserList();
     }
 }

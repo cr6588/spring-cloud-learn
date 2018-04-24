@@ -1,7 +1,17 @@
 server:
     port: 9090
-spring:
-    profiles: dev
-
 logging:
     config: classpath:logback-dev.xml
+dubbo:
+    application:
+        name: consumer
+    registry:
+        protocol: zookeeper
+        address: localhost:2181
+#    protocol: 
+#        name: dubbo
+#        port: 21001
+    consumer: 
+        timeout: 30000
+        retries: 0
+        false: false

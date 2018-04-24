@@ -118,3 +118,6 @@
 2018-04-24 11:28:20 - INFO - Starting UserServiceTest on cr-PC with PID 7096 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
 2018-04-24 11:28:20 - INFO - No active profile set, falling back to default profiles: default
 2018-04-24 11:28:22 - INFO - Started UserServiceTest in 1.964 seconds (JVM running for 2.459)
+2018-04-24 13:50:02 - INFO - Starting UserServiceTest on cr-PC with PID 6684 (started by cr in D:\git\spring-cloud-learn\spring-boot-mybatis\spring-boot-mybatis-xml)
+2018-04-24 13:50:02 - INFO - No active profile set, falling back to default profiles: default
+2018-04-24 13:50:04 - INFO - Started UserServiceTest in 2.601 seconds (JVM running for 3.266)

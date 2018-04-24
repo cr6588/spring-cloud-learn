@@ -1,3 +1,5 @@
+server:
+    port: 8999
 spring:
     datasource:
         name: test
@@ -23,3 +25,15 @@ mybatis:
     mapper-locations: classpath*:com/cr6588/dao/mapper/*.xml
 logging:
     config: classpath:logback-dev.xml
+#dubbo:
+#    scan:
+#        basePackages: com.cr6588.service.impl
+#    application:
+#        name: provider
+ #   registry:
+ #       protocol: zookeeper
+ #       address: localhost:2181
+#    protocol: 
+#        name: dubbo
+#        port: 21001
+
