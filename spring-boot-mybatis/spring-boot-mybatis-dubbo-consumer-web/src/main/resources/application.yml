@@ -1,0 +1,24 @@
+server:
+    port: 9090
+logging:
+    config: classpath:logback-dev.xml
+dubbo:
+    application:
+        name: consumer
+    registry:
+        protocol: zookeeper
+        address: localhost:2181
+#    protocol: 
+#        name: dubbo
+#        port: 21001
+    consumer: 
+        timeout: 30000
+        retries: 0
+        false: false
+spring:
+#https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/#howto-spring-mvc
+#org.springframework.boot.autoconfigure.web.WebMvcProperties
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp
