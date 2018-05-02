@@ -1,6 +1,6 @@
 debug: true
 server:
-    port: 9090
+    port: 80
 logging:
     config: classpath:logback-dev.xml
 dubbo:
