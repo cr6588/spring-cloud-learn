@@ -15,6 +15,7 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 @SpringBootApplication(exclude = { DataSourceAutoConfiguration.class, DataSourceTransactionManagerAutoConfiguration.class })
 public class App extends SpringBootServletInitializer {
 
+    //
     public static void main(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(App.class);
         app.run(args);
