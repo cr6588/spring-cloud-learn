@@ -1,5 +1,6 @@
+debug: true
 server:
-    port: 9090
+    port: 80
 logging:
     config: classpath:logback-dev.xml
 dubbo:
@@ -15,3 +16,10 @@ dubbo:
         timeout: 30000
         retries: 0
         false: false
+spring:
+#https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/#howto-spring-mvc
+#org.springframework.boot.autoconfigure.web.WebMvcProperties
+    mvc:
+        view:
+            prefix: /WEB-INF/jsp/
+            suffix: .jsp

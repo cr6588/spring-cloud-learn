@@ -1,9 +1,11 @@
+server:
+    port: 8999
 spring:
     datasource:
         name: test
         url: jdbc:mysql://localhost/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8
-        username: root
-        password: tTdAdf212
+        username: dev
+        password: dev
         type: com.alibaba.druid.pool.DruidDataSource
         initialSize: 1
         minIdle: 1
@@ -23,3 +25,15 @@ mybatis:
     mapper-locations: classpath*:com/cr6588/dao/mapper/*.xml
 logging:
     config: classpath:logback-dev.xml
+#dubbo:
+#    scan:
+#        basePackages: com.cr6588.service.impl
+#    application:
+#        name: provider
+ #   registry:
+ #       protocol: zookeeper
+ #       address: localhost:2181
+#    protocol: 
+#        name: dubbo
+#        port: 21001
+
