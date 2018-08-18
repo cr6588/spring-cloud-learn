@@ -11,5 +11,7 @@ import com.cr6588.bean.User;
  */
 public interface UserService {
 
-    List<User> getUserList();
+    List<User> getUserList(User user);
+
+    Long saveUser(User user);
 }

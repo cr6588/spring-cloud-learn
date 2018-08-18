@@ -2,6 +2,7 @@ package com.cr6588.facade;
 
 import java.util.List;
 
+import com.cr6588.bean.RequestResult;
 import com.cr6588.bean.User;
 
 /**
@@ -11,5 +12,7 @@ import com.cr6588.bean.User;
  */
 public interface UserFacade {
 
-    List<User> getUserList();
+    List<User> getUserList(User user);
+
+    RequestResult<String> regis(User user);
 }
