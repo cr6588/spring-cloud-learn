@@ -14,7 +14,7 @@ import com.cr6588.service.UserService;
  * @category TODO
  * @author chenyi
  */
-//spring注解
+// spring注解
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -22,8 +22,14 @@ public class UserServiceImpl implements UserService {
     private UserDao userDao;
 
     @Override
-    public List<User> getUserList() {
-        return userDao.getUserList();
+    public List<User> getUserList(User user) {
+        return userDao.getUserList(user);
+    }
+
+    @Override
+    public Long saveUser(User user) {
+        userDao.saveUser(user);
+        return user.getId();
     }
 
 }

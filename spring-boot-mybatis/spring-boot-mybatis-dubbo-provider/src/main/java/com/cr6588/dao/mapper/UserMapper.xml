@@ -7,17 +7,18 @@
     <resultMap id="userMap" type="user" >
         <id column="id" property="id" />
         <result column="username" property="username" />
+        <result column="password" property="password" />
     </resultMap>
     <sql id="userColumnList">
-        `id`, `username`
+        `id`, `username`, `password`
     </sql>
-<!--     <insert id="saveUser" parameterType="user" keyProperty="id"> -->
-<!--         insert into `user` ( -->
-<!--             <include refid="userColumnList"/> -->
-<!--         ) values ( -->
-<!--             #{id}, #{username} -->
-<!--         ) -->
-<!--     </insert> -->
+    <insert id="saveUser" parameterType="user" keyProperty="id">
+        insert into `user` (
+            <include refid="userColumnList"/>
+        ) values (
+            #{id}, #{username}, #{password}
+        )
+    </insert>
 <!--     <update id="updateUser" parameterType="user" > -->
 <!--         update `user` -->
 <!--         set `username` = #{username} -->
@@ -31,6 +32,7 @@
         <where>
             <if test="id != null"> and `id` = #{id}</if>
             <if test="username != null"> and `username` = #{username}</if>
+            <if test="password != null"> and `password` = #{password}</if>
         </where>
     </sql>
 <!--     <select id="getUser" parameterType="map" resultMap="userMap"> -->
@@ -39,7 +41,7 @@
 <!--         from `user` -->
 <!--         <include refid="userSelectCondition" /> -->
 <!--     </select> -->
-    <select id="getUserList" resultMap="userMap">
+    <select id="getUserList" parameterType="user" resultMap="userMap">
         select
             <include refid="userColumnList" />
         from `user`

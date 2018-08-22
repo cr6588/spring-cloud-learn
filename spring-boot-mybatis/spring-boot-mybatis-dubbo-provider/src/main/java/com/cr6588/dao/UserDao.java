@@ -11,5 +11,7 @@ import com.cr6588.bean.User;
  */
 public interface UserDao {
 
-    List<User> getUserList();
+    List<User> getUserList(User u);
+
+    void saveUser(User user);
 }
