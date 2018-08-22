@@ -1,11 +1,11 @@
 server:
-    port: 8999
+    port: 8998
 spring:
     datasource:
         name: test
-        url: jdbc:mysql://localhost/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8
-        username: dev
-        password: dev
+        url: jdbc:mysql://mysql.cr6588.com/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8
+        username: root
+        password: tTdAdf212
         type: com.alibaba.druid.pool.DruidDataSource
         initialSize: 1
         minIdle: 1
