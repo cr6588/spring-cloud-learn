@@ -2,6 +2,9 @@ package com.cr6588.bean;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Size;
+
 /**
  * create in 2018年04月16日
  * @category TODO
@@ -14,7 +17,12 @@ public class User implements Serializable {
      */
     private static final long serialVersionUID = 3912382765184885372L;
     private Long id;
-    private Long username;
+
+    @NotBlank(message = "用户名不能为空")
+    @Size(min = 6, max = 16, message = "用户名长度在6到16位")
+    private String username;
+    @NotBlank(message = "密码不能为空")
+    @Size(min = 6, max = 16, message = "密码长度在6到16位")
     private String password;
 
     public Long getId() {
@@ -25,11 +33,11 @@ public class User implements Serializable {
         this.id = id;
     }
 
-    public Long getUsername() {
+    public String getUsername() {
         return username;
     }
 
-    public void setUsername(Long username) {
+    public void setUsername(String username) {
         this.username = username;
     }
 

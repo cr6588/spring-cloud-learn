@@ -83,23 +83,14 @@
             <version>1.2</version>
 <!--             <scope>provided</scope> -->
         </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>5.0.2.Final</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
-<!--         把druid相关包删除，不然在非内置tomcat中运行会提示datasource -->
-<!--             <plugin> -->
-<!--                 <groupId>org.apache.maven.plugins</groupId> -->
-<!--                 <artifactId>maven-surefire-plugin</artifactId> -->
-<!--                 <configuration> -->
-<!--                     ignore test case -->
-<!--                     <skipTests>true</skipTests> -->
-<!--                 </configuration> -->
-<!--             </plugin> -->
-            <!-- Package as an executable jar/war 会把druid打进来，需要在lib中排除 -->
-<!--             <plugin> -->
-<!--                 <groupId>org.springframework.boot</groupId> -->
-<!--                 <artifactId>spring-boot-maven-plugin</artifactId> -->
-<!--             </plugin> -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
