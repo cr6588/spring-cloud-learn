@@ -64,7 +64,7 @@ export default {
                             message: "登录成功",
                             type: 'success'
                         })
-                        vue.$router.push('about')
+                        vue.$router.push('home')
                     } else {
                         vue.$message.error(data.msg);
                     }
