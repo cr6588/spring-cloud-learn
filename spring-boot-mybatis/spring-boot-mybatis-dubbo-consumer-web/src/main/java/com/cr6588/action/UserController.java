@@ -23,6 +23,7 @@ import com.cr6588.facade.UserFacade;
 @RequestMapping("/user")
 public class UserController {
 
+    //userFacade在provider未启动时，为null，无法自动重连。当成功连过一次之后provider被断开，再重启provider可以重连
     @Reference
     private UserFacade userFacade;
 

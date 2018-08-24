@@ -1,6 +1,6 @@
-server:
-    port: 8998
+debug: false
 spring:
+    profiles: dev
     datasource:
         name: test
         url: jdbc:mysql://mysql.cr6588.com/spring-cloud-learn?useUnicode=true&characterEncoding=utf-8

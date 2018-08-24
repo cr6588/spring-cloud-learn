@@ -7,7 +7,7 @@
         <version>0.0.1</version>
     </parent>
     <artifactId>spring-boot-mybatis-dubbo-consumer-web</artifactId>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <name>spring-boot-mybatis-dubbo-consumer-web Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <dependencies>
@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
+<!--             <scope>provided</scope> -->
         </dependency>
         <dependency>
             <groupId>com.101tec</groupId>
@@ -55,229 +55,49 @@
             </exclusions>
         </dependency>
         <!--用于spring-boot编译jsp -->
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-jasper</artifactId>
-            <scope>provided</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-tomcat</artifactId>
-            <scope>provided</scope>
-        </dependency>
+<!--         <dependency> -->
+<!--             <groupId>org.apache.tomcat.embed</groupId> -->
+<!--             <artifactId>tomcat-embed-jasper</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>org.springframework.boot</groupId> -->
+<!--             <artifactId>spring-boot-starter-tomcat</artifactId> -->
+<!--             <scope>provided</scope> -->
+<!--         </dependency> -->
         <!-- servlet -->
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.1</version>
+<!--         <dependency> -->
+<!--             <groupId>javax.servlet.jsp</groupId> -->
+<!--             <artifactId>javax.servlet.jsp-api</artifactId> -->
+<!--             <version>2.3.1</version> -->
 <!--             <scope>provided</scope> -->
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>javax.servlet</groupId> -->
+<!--             <artifactId>javax.servlet-api</artifactId> -->
 <!--             <scope>provided</scope> -->
-        </dependency>
-        <dependency>
-            <groupId>jstl</groupId>
-            <artifactId>jstl</artifactId>
-            <version>1.2</version>
+<!--         </dependency> -->
+<!--         <dependency> -->
+<!--             <groupId>jstl</groupId> -->
+<!--             <artifactId>jstl</artifactId> -->
+<!--             <version>1.2</version> -->
 <!--             <scope>provided</scope> -->
-        </dependency>
+<!--         </dependency> -->
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>5.0.2.Final</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.1</version>
-                <configuration>
-                    <source>${java.version}</source>
-                    <target>${java.version}</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-resources-plugin</artifactId>
-                <version>2.6</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-            <!-- install war,jar,source-jar -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-install-plugin</artifactId>
-                <version>2.4</version>
-                <executions>
-                    <execution>
-                        <id>install-war</id>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/${project.build.finalName}.war</file>
-                            <generatePom>false</generatePom>
-                            <pomFile>pom.xml</pomFile>
-                            <packaging>war</packaging>
-                            <version>${project.version}</version>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>install-jar</id>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/${project.build.finalName}.jar</file>
-                            <generatePom>false</generatePom>
-                            <pomFile>pom.xml</pomFile>
-                            <packaging>jar</packaging>
-                            <version>${project.version}</version>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>install-source-jar</id>
-                        <goals>
-                            <goal>install-file</goal>
-                        </goals>
-                        <phase>install</phase>
-                        <configuration>
-                            <file>${project.build.directory}/${project.build.finalName}-sources.jar</file>
-                            <generatePom>false</generatePom>
-                            <pomFile>pom.xml</pomFile>
-                            <packaging>jar</packaging>
-                            <classifier>sources</classifier>
-                            <version>${project.version}</version>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- 更改maven默认的打包目录：将class文件和lib目录打包放到指定的目录 -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-war-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <archive>
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                    <includeEmptyDirectories>false</includeEmptyDirectories>
-                    <webappDirectory>${basedir}/src/main/webapp</webappDirectory>
-                    <warSourceDirectory>${basedir}/src/main/webapp</warSourceDirectory>
-                    <!--如果想在没有web.xml文件的情况下构建WAR，请设置为false。-->      
-                    <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <!-- <webXml>${basedir}/src/main/webapp/WEB-INF/web.xml</webXml> -->
-                </configuration>
-            </plugin>
-            <!-- eiss-new.jar -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>2.4</version>
-                <configuration>
-                    <archive>
-                        <!-- 打包时 MANIFEST.MF文件不记录的时间戳版本 -->
-                        <addMavenDescriptor>false</addMavenDescriptor>
-                    </archive>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>make-a-jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <archive>
-                                <addMavenDescriptor>false</addMavenDescriptor>
-                                <manifest>
-                                    <addClasspath>false</addClasspath>
-                                </manifest>
-                            </archive>
-                            <skipIfEmpty>true</skipIfEmpty>
-                            <useDefaultManifestFile>true</useDefaultManifestFile>
-                            <excludes>
-                                <exclude>%regex*[((?!message)\w)+].properties</exclude>
-                                <exclude>hibernate*.xml</exclude>
-                                <exclude>spring-*.xml</exclude>
-                            </excludes>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <!-- eiss-new.source.jar -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-source-plugin</artifactId>
-                <version>2.2.1</version>
-                <executions>
-                    <execution>
-                        <id>attach-sources</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>jar-no-fork</goal>
-                        </goals>
-                        <configuration>
-                            <excludeResources>true</excludeResources>
-                            <includePom>false</includePom>
-                            <useDefaultExcludes>true</useDefaultExcludes>
-                            <forceCreation>true</forceCreation>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>tomcat-maven-plugin</artifactId>
-                <version>1.1</version>
-            </plugin>
-            <!-- junit test -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>2.9</version>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.12.4</version>
-                <configuration>
-                    <!-- ignore test case -->
-                    <skipTests>true</skipTests>
-                </configuration>
-            </plugin>
-            <!-- jacoco covered -->
-            <plugin>
-                <groupId>org.jacoco</groupId>
-                <artifactId>jacoco-maven-plugin</artifactId>
-                <version>0.6.3.201306030806</version>
-                <configuration>
-                    <destFile>${basedir}/target/coverage-reports/jacoco-unit.exec</destFile>
-                    <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
-                </configuration>
-                <executions>
-                    <execution>
-                        <id>jacoco-initialize</id>
-                        <goals>
-                            <goal>prepare-agent</goal>
-                        </goals>
-                    </execution>
-                    <execution>
-                        <id>JaCoCo Report</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>report</goal>
-                        </goals>
-                    </execution>
-                </executions>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>

@@ -1,7 +1,8 @@
 package com.cr6588.boot;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
 
 /**
  * create in 2018年04月23日
@@ -10,43 +11,26 @@ import org.springframework.boot.SpringApplication;
  */
 public abstract class AbstractSpringStartup implements CommandLineRunner {
 
-    private String[] args;
+    private static final Logger LOGGER = LoggerFactory.getLogger(AbstractSpringStartup.class);
 
-    public String[] getArgs() {
-        return args;
-    }
+    public abstract String getModuleName();
 
-    public void setArgs(String[] args) {
-        this.args = args;
-    }
-
-    public AbstractSpringStartup() {
-        super();
-    }
-
-    public AbstractSpringStartup(String... args) {
-        super();
-        this.args = args;
-        init();
-    }
-
-    public void init() {
-        SpringApplication app = new SpringApplication(this.getClass());
-        app.run(args);
-    }
-
-    public static void init(Class<? extends AbstractSpringStartup> clazz, String... args) {
-        SpringApplication app = new SpringApplication(clazz);
-        app.run(args);
+    public boolean isTest() {
+        return false;
     }
 
     @Override
     public void run(String... args) throws Exception {
+        if(isTest()) {
+            return;
+        }
         synchronized (this) {
             while (true) {
                 try {
+                    LOGGER.info(getModuleName() + "启动成功");
                     this.wait();
                 } catch (InterruptedException e) {
+                    LOGGER.error(e.getMessage(), e);
                 }
             }
         }

@@ -5,20 +5,29 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
-/**
- * Hello world!
- */
+import com.cr6588.boot.AbstractSpringStartup;
+
+
 @SpringBootApplication
 @MapperScan("com.cr6588.dao")
 @ImportResource("classpath:dubbo-provider.xml")
-public class App {
+public class App extends AbstractSpringStartup {
 
     public static void main(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(App.class);
-//        app.setAdditionalProfiles("prod");
+         app.setAdditionalProfiles("dev");
         app.run(args);
     }
 
-    
+    @Override
+    public String getModuleName() {
+        return "spring-boot-mybatis-dubbo-provider";
+    }
 
+//    @Override
+//    public boolean isTest() {
+//        return true;
+//    }
+
+    
 }
