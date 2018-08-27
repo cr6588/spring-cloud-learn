@@ -48,4 +48,65 @@
         <include refid="userSelectCondition" />
     </select>
     <!--     User end -->
+
+    <!--     PubUserRole start -->
+    <resultMap id="pubUserRoleMap" type="pubUserRole" >
+        <id column="id" property="id" />
+        <result column="comId" property="comId" />
+        <result column="name" property="name" />
+        <result column="status" property="status" />
+        <result column="permission" property="permission" />
+        <result column="deleted" property="deleted" />
+        <result column="createTime" property="createTime" />
+    </resultMap>
+    <sql id="pubUserRoleColumnList">
+        `id`, `comId`, `name`, `status`, `permission`, `deleted`, `createTime`
+    </sql>
+    <insert id="savePubUserRole" parameterType="pubUserRole" keyProperty="id">
+        insert into `pub_user_role` (
+            <include refid="pubUserRoleColumnList"/>
+        ) values (
+            #{id}, #{comId}, #{name},
+            #{status}, #{permission}, #{deleted},
+            #{createTime}
+        )
+    </insert>
+    <update id="updatePubUserRole" parameterType="pubUserRole" >
+        update `pub_user_role`
+        set `comId` = #{comId},
+            `name` = #{name},
+            `status` = #{status},
+            `permission` = #{permission},
+            `deleted` = #{deleted},
+            `createTime` = #{createTime}
+        where id = #{id}
+    </update>
+    <delete id="deletePubUserRole" parameterType="map">
+        delete from `pub_user_role`
+        where id = #{id}
+    </delete>
+    <sql id="pubUserRoleSelectCondition">
+        <where>
+            <if test="id != null"> and `id` = #{id}</if>
+            <if test="comId != null"> and `comId` = #{comId}</if>
+            <if test="name != null"> and `name` = #{name}</if>
+            <if test="status != null"> and `status` = #{status}</if>
+            <if test="permission != null"> and `permission` = #{permission}</if>
+            <if test="deleted != null"> and `deleted` = #{deleted}</if>
+            <if test="createTime != null"> and `createTime` = #{createTime}</if>
+        </where>
+    </sql>
+    <select id="getPubUserRole" parameterType="map" resultMap="pubUserRoleMap">
+        select
+            <include refid="pubUserRoleColumnList" />
+        from `pub_user_role`
+        <include refid="pubUserRoleSelectCondition" />
+    </select>
+    <select id="getPubUserRoleList" parameterType="map" resultMap="pubUserRoleMap">
+        select
+            <include refid="pubUserRoleColumnList" />
+        from `pub_user_role`
+        <include refid="pubUserRoleSelectCondition" />
+    </select>
+    <!--     PubUserRole end -->
 </mapper>

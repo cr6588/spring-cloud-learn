@@ -1,10 +1,12 @@
 package com.cr6588.facade.impl;
 
 import java.util.List;
+import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.cr6588.bean.PubUserRole;
 import com.cr6588.bean.RequestResult;
 import com.cr6588.bean.User;
 import com.cr6588.facade.UserFacade;
@@ -39,4 +41,30 @@ public class UserFacadeImpl implements UserFacade {
         return RequestResult.createSucc();
     }
 
+    @Override
+    public List<PubUserRole> getPubUserRoleList(Map<String, Object> param) {
+        return userService.getPubUserRoleList(param);
+    }
+
+    @Override
+    public PubUserRole getPubUserRole(Map<String, Object> param) {
+        return userService.getPubUserRole(param);
+    }
+
+    @Override
+    public void savePubUserRole(PubUserRole pubUserRole) {
+        userService.savePubUserRole(pubUserRole);
+    }
+
+    @Override
+    public void updatePubUserRole(PubUserRole pubUserRole) {
+        userService.updatePubUserRole(pubUserRole);
+    }
+
+    @Override
+    public void deletePubUserRole(long id) {
+        userService.deletePubUserRole(id);
+    }
+
+    
 }

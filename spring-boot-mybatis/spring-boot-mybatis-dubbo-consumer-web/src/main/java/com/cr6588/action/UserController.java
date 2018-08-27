@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.dubbo.config.annotation.Reference;
+import com.cr6588.bean.PubUserRole;
 import com.cr6588.bean.RequestResult;
 import com.cr6588.bean.User;
 import com.cr6588.facade.UserFacade;
@@ -45,5 +46,15 @@ public class UserController {
             return RequestResult.createErr(result.getAllErrors().get(0).getDefaultMessage());
         }
         return userFacade.regis(u);
+    }
+
+    @RequestMapping("/getUsers")
+    public RequestResult<List<User>> getUsers() {
+        return RequestResult.createSucc(null, userFacade.getUserList(null)) ;
+    }
+
+    @RequestMapping("/getRoles")
+    public RequestResult<List<PubUserRole>> getRoles() {
+        return RequestResult.createSucc(null, userFacade.getPubUserRoleList(null)) ;
     }
 }

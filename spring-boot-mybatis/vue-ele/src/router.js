@@ -24,7 +24,21 @@ export default new Router({
     {
       path: '/home',
       name: 'home',
-      component: () => import('./views/Home.vue')
+      component: () => import('./views/Home.vue'),
+      children: [{
+        //path: 'users', 路径为/home/users
+        path: '/user/users',
+        name: 'users',
+        components: {
+          helper: () => import('./views/Users.vue')
+        }
+      }, {
+        path: '/user/roles',
+        name: 'roles',
+        components: {
+          helper: () => import('./views/Roles.vue')
+        }
+      }]
     }
   ]
 })

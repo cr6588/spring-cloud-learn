@@ -9,32 +9,39 @@
             </ul>
         </div>
     </el-col>
-    <el-col :span="16">
+    <el-col :span="18">
         <div class="grid-content bg-purple-light">
-            <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+            <!-- 加入router启用vue-router导航 -->
+            <el-menu router :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                 <!-- background-color="#478de4" text-color="#fff" active-text-color="#ffd04b" -->
                 <el-menu-item index="1">
-                    <img alt="Vue logo" src="@/assets/logo.png" style="width: 30px">
                     首页
                 </el-menu-item>
-                <el-submenu index="2">
-                    <template slot="title">用户</template>
-                    <el-menu-item index="2-1">用户列表</el-menu-item>
-                </el-submenu>
+                <el-menu-item index="/user/users">用户</el-menu-item>
+                <el-menu-item index="4">物流</el-menu-item>
             </el-menu>
         </div>
     </el-col>
-    <el-col :span="4">
+    <el-col :span="2">
         <div class="grid-content bg-purple-light header-center">
             <el-dropdown>
-                <i class="el-icon-setting" style="margin-right: 15px"></i>
+            <span class="el-dropdown-link">
+                {{ user.username }}<i class="el-icon-arrow-down el-icon--right"></i>
+            </span>
+            <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>注销</el-dropdown-item>
+            </el-dropdown-menu>
+            </el-dropdown>
+            <!-- <el-dropdown>
+                {{ user.username }}<i class="el-icon-setting" style="margin-right: 15px"></i>
                 <el-dropdown-menu slot="dropdown">
                     <el-dropdown-item>查看</el-dropdown-item>
                     <el-dropdown-item>新增</el-dropdown-item>
                     <el-dropdown-item>删除</el-dropdown-item>
                 </el-dropdown-menu>
-            </el-dropdown>
-            <span>王小虎</span></div>
+            </el-dropdown> -->
+            
+        </div>
     </el-col>
 
 </el-row>
@@ -42,18 +49,25 @@
 
 <style>
 .header-center *{
-    height: 60px;
     line-height: 60px;
     vertical-align: middle;
     font-size: 14px;
-        -webkit-box-direction: normal;
+    text-align: center;
+    /* -webkit-box-direction: normal; */
 }
+.header-center ul {
+    margin: 0px;
+    padding: 0 0;
+    list-style: none;
+}
+
 /* .header-center ul {
     margin: 0px
 } */
 </style>
 
 <script>
+
 export default {
     name: "my-header",
     data() {
@@ -64,6 +78,11 @@ export default {
     methods: {
         handleSelect(key, keyPath) {
             console.log(key, keyPath);
+        }
+    },
+    computed: {
+        user () {
+            return this.$store.state.user
         }
     }
 }

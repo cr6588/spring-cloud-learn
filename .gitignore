@@ -4,3 +4,4 @@
 /.project
 /*.log
 /.idea/
+/spring-data-jpa-dubbo-provider/

@@ -8,8 +8,12 @@
           <Aside></Aside>
         </el-aside>
         <el-container>
-            <el-main>Main</el-main>
-            <el-footer>Footer</el-footer>
+            <el-main>
+                <router-view name="helper"/>
+            </el-main>
+            <el-footer>
+                Copyright © 2016 - 2018 All Rights Reserved | 版权所有：cr6588 &nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.miibeian.gov.cn" style="color:#858894;" target="_blank">蜀ICP备XXXXXX号</a></div>
+            </el-footer>
         </el-container>
     </el-container>
 </el-container>
@@ -37,8 +41,8 @@
 .el-main {
     background-color: #E9EEF3;
     color: #333;
-    text-align: center;
-    line-height: 160px;
+    /* text-align: center; */
+    /* line-height: 160px; */
 }
 
 body>.el-container {
@@ -63,5 +67,8 @@ export default {
     Aside,
     Header
   },
+  data : function () {
+      return {}
+  }
 }
 </script>

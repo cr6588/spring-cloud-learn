@@ -1,6 +1,5 @@
 <template>
 <div>
-    <div>登录</div>
     <el-form :model="user" :rules="rules" ref="user" label-width="100px" class="demo-ruleForm">
         <el-form-item label="用户名" prop="username">
             <el-input clearable v-model="user.username" auto-complete="off"> </el-input>
@@ -56,6 +55,7 @@ export default {
                 return false;
             }
             var vue = this;
+            var username = this.user.username
             this.$axios.post('/user/login', this.user)
                 .then(function (res) {
                     var data = res.data
@@ -64,6 +64,7 @@ export default {
                             message: "登录成功",
                             type: 'success'
                         })
+                        vue.$store.commit('updateUser', username)
                         vue.$router.push('home')
                     } else {
                         vue.$message.error(data.msg);
