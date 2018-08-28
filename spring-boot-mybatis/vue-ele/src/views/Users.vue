@@ -1,5 +1,5 @@
 <template>
-<el-table :data="tableData">
+<el-table v-loading="loading" :data="tableData">
     <el-table-column prop="id" label="id">
     </el-table-column>
     <el-table-column prop="username" label="用户名">
@@ -16,9 +16,11 @@
 <script>
 export default {
     data() {
+        this.$store.commit('updateHeaderMenu', this.$route.path)
         var vue = this;
         this.$axios.post('/user/getUsers')
             .then(function (res) {
+                vue.loading = false
                 var res = res.data
                 if (res.code == 0) {
                     //等网络请求完时，页面已经先返回了tableData，
@@ -32,7 +34,8 @@ export default {
                 vue.$message.error("网络错误")
             });
         return {
-            tableData: []
+            tableData: [],
+            loading: true
         }
     }
 };

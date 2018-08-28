@@ -14,11 +14,7 @@
             <!-- 加入router启用vue-router导航 -->
             <el-menu router :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
                 <!-- background-color="#478de4" text-color="#fff" active-text-color="#ffd04b" -->
-                <el-menu-item index="1">
-                    首页
-                </el-menu-item>
-                <el-menu-item index="/user/users">用户</el-menu-item>
-                <el-menu-item index="4">物流</el-menu-item>
+                <el-menu-item  v-for="menu in menus" :key="menu.id" :index="menu.path">{{ menu.name }}</el-menu-item>
             </el-menu>
         </div>
     </el-col>
@@ -29,7 +25,8 @@
                 {{ user.username }}<i class="el-icon-arrow-down el-icon--right"></i>
             </span>
             <el-dropdown-menu slot="dropdown">
-                <el-dropdown-item>注销</el-dropdown-item>
+                <!-- el-dropdown-item没有自定义click事件 1.使用原生click事件 2.使用菜单项的指令事件 https://segmentfault.com/q/1010000012916163 -->
+                <el-dropdown-item @click.native="loginOut()">注销</el-dropdown-item>
             </el-dropdown-menu>
             </el-dropdown>
             <!-- <el-dropdown>
@@ -72,17 +69,43 @@ export default {
     name: "my-header",
     data() {
         return {
-            activeIndex: '1'
+            menus: [
+                {id: 1, name: '首页', path: '/home/main'},
+                {id: 2, name: '用户', path: '/user/users'},
+                {id: 3, name: '物流', path: '/logistics/sysLogisticsList'}
+            ]
         };
     },
     methods: {
         handleSelect(key, keyPath) {
-            console.log(key, keyPath);
+            console.log(key + keyPath)
+        },
+        loginOut: function() {
+            this.user = "";
+            this.$router.push('/')
         }
     },
     computed: {
-        user () {
-            return this.$store.state.user
+        user: {
+            get: function() {
+                return this.$store.getters.userDb
+            },
+            set: function (newUsername) {
+                this.$store.commit('updateUser', newUsername)
+            }
+        },
+        activeIndex() {
+            var headerMenuType = this.$store.getters.headerMenuType
+            console.log(headerMenuType)
+            switch(headerMenuType) {
+                case 'home':
+                    return this.menus[0].path
+                case 'user':
+                    return this.menus[1].path
+                default :
+                    return this.menus[2].path
+            }
+            // return this.$store.getters.headerMenuType
         }
     }
 }

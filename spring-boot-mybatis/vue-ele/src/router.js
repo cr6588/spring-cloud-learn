@@ -27,6 +27,13 @@ export default new Router({
       component: () => import('./views/Home.vue'),
       children: [{
         //path: 'users', 路径为/home/users
+        path: 'main',
+        name: 'homeMain',
+        components: {
+          helper: () => import('./views/HomeMain.vue')
+        }
+      },{
+        //path: 'users', 路径为/home/users
         path: '/user/users',
         name: 'users',
         components: {
@@ -37,6 +44,12 @@ export default new Router({
         name: 'roles',
         components: {
           helper: () => import('./views/Roles.vue')
+        }
+      }, {
+        path: '/logistics/sysLogisticsList',
+        name: 'sysLogisticsList',
+        components: {
+          helper: () => import('./views/logistics/sysLogisticsList.vue')
         }
       }]
     }

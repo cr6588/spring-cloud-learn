@@ -65,7 +65,8 @@ export default {
                             type: 'success'
                         })
                         vue.$store.commit('updateUser', username)
-                        vue.$router.push('home')
+                        vue.$store.commit('updateHeaderMenu', '')
+                        vue.$router.push('/home/main')
                     } else {
                         vue.$message.error(data.msg);
                     }
