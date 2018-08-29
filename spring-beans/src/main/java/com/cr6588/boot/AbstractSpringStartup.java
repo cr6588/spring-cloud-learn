@@ -42,14 +42,14 @@ public abstract class AbstractSpringStartup implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        synchronized (this) {
-            while (true) {
-                try {
-                    this.wait();
-                } catch (InterruptedException e) {
-                }
-            }
-        }
+//        synchronized (this) {
+//            while (true) {
+//                try {
+//                    this.wait();
+//                } catch (InterruptedException e) {
+//                }
+//            }
+//        }
     }
 
 }
