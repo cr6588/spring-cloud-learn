@@ -2,8 +2,9 @@ package com.cr6588.bean;
 
 import java.io.Serializable;
 
-import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Size;
+
+import org.hibernate.validator.constraints.NotBlank;
 
 /**
  * create in 2018年04月16日

@@ -33,6 +33,6 @@ public class ErrorController extends BasicErrorController {
                 errorViewName = "404";
             }
         }
-        return new ModelAndView("error/" + errorViewName);
+        return new ModelAndView("index.html");
     }
 }

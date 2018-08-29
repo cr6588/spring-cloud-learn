@@ -20,7 +20,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
  * @category TODO
  * @author chenyi
  */
-//@Configuration
+@Configuration
 public class SqlSessionFactoryConfig {
 
     @Autowired

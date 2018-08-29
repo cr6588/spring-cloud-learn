@@ -22,7 +22,7 @@
     <modules>
         <module>spring-boot-mybatis-dubbo-provider</module>
         <module>spring-boot-mybatis-dubbo-consumer-web</module>
-        <module>spring-consul-provider</module>
+<!--         <module>spring-consul-provider</module> -->
     </modules>
     <packaging>pom</packaging>
 </project>
