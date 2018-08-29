@@ -31,4 +31,4 @@
 #### 7. 部署
 
 在/spring-cloud-learn/spring-boot-mybatis/vue-ele目录
-npm run build将生成dist文件目录，复制该目录下所有文件到/spring-cloud-learn/spring-boot-mybatis/spring-boot-mybatis-dubbo-consumer-web/src/main/resources/static目录下，然后对spring-cloud-learn进行mvn clean install，再分别进行对spring-boot-mybatis-dubbo-provider与spring-boot-mybatis-dubbo-consumer-web进行java -jar即可
+npm run build将生成dist文件目录，复制该目录下所有文件到/spring-cloud-learn/spring-boot-mybatis/spring-boot-mybatis-dubbo-consumer-web/src/main/resources/static目录下，然后对spring-cloud-learn进行mvn clean install，再分别对spring-boot-mybatis-dubbo-provider与spring-boot-mybatis-dubbo-consumer-web进行java -jar即可
