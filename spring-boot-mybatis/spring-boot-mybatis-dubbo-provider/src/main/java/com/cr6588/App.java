@@ -1,15 +1,17 @@
 package com.cr6588;
 
-import org.springframework.boot.CommandLineRunner;
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ImportResource;
 
+import com.cr6588.boot.AbstractSpringStartup;
 
-//@MapperScan("com.cr6588.dao")
+
+@MapperScan("com.cr6588.dao")
 @ImportResource("classpath:dubbo-provider.xml")
 @SpringBootApplication
-public class App implements CommandLineRunner {
+public class App extends AbstractSpringStartup {
 
     public static void main(String[] args) throws Exception {
         SpringApplication app = new SpringApplication(App.class);
@@ -17,23 +19,14 @@ public class App implements CommandLineRunner {
          app.run(args);
     }
 
-    @Override
-    public void run(String... args) throws Exception {
-        if(isTest()) {
-            return;
-        }
-//        synchronized (this) {
-//            while (true) {
-//                try {
-//                    this.wait();
-//                } catch (InterruptedException e) {
-//                }
-//            }
-//        }
-    }
+//    @Override
+//    public boolean isTest() {
+//        return true;
+//    }
 
-    public boolean isTest() {
-        return false;
+    @Override
+    public String getModuleName() {
+        return "provider";
     }
 
     

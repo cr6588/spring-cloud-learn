@@ -95,7 +95,6 @@ export default {
         },
         activeIndex() {
             var headerMenuType = this.$store.getters.headerMenuType
-            console.log(headerMenuType)
             switch(headerMenuType) {
                 case 'home':
                     return this.menus[0].path

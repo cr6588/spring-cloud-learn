@@ -13,8 +13,8 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-<!--         <version>2.0.4.RELEASE</version> -->
-        <version>1.5.13.RELEASE</version>
+        <version>2.0.4.RELEASE</version>
+<!--         <version>1.5.13.RELEASE</version> -->
         <relativePath />
     </parent>
     <!-- 有dependencyManagement管理版本不会形成依赖，子项目无需写版本信息 -->
