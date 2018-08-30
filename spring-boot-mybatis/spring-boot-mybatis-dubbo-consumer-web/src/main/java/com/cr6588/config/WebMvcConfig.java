@@ -5,12 +5,12 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.validation.Validator;
 import org.springframework.validation.beanvalidation.LocalValidatorFactoryBean;
+import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 /**
  * create in 2018年08月22日
- * @category
- * @author chenyi
+ * @category @author chenyi
  */
 @Configuration
 public class WebMvcConfig implements WebMvcConfigurer {
@@ -33,6 +33,12 @@ public class WebMvcConfig implements WebMvcConfigurer {
         LocalValidatorFactoryBean validator = new LocalValidatorFactoryBean();
         validator.setProviderClass(HibernateValidator.class);
         return validator;
+    }
+
+    // 不需要后台处理跨域时删除
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**").allowedOrigins("*").allowedMethods("*").allowCredentials(true);
     }
 
 }
