@@ -87,6 +87,7 @@
         <module>spring-beans</module>
         <module>spring-boot-mybatis</module>
 <!--         <module>spring-data-jpa-dubbo-provider</module> -->
+        <module>spring-mq</module>
     </modules>
     <build>
         <plugins>
