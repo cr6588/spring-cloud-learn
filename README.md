@@ -1,4 +1,5 @@
 # spring-cloud-learn
+[![Build Status](https://travis-ci.org/cr6588/spring-cloud-learn.svg?branch=master)](https://travis-ci.org/cr6588/spring-cloud-learn)
 #### 1. 创建数据库spring-cloud-learn
 
 运行/spring-cloud-learn/spring-boot-mybatis/spring-boot-mybatis-dubbo-provider/src/main/resources/sql.sql创建表
