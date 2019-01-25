@@ -23,6 +23,7 @@
         <module>spring-boot-mybatis-dubbo-provider</module>
         <module>spring-boot-mybatis-dubbo-consumer-web</module>
         <!-- <module>spring-consul-provider</module> -->
+<!--         <module>spring-boot-mybatis-distributed-transaction-atomikos</module> -->
     </modules>
     <packaging>pom</packaging>
 </project>
