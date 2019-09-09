@@ -1,0 +1,17 @@
+debug: false
+server:
+    port: 8180
+    ssl:
+        key-store: classpath:keystore.p12
+        key-store-password: 123456
+        keyStoreType: PKCS12
+        keyAlias: tomcat
+logging:
+    config: classpath:logback-dev.xml
+#spring:
+#https://docs.spring.io/spring-boot/docs/1.5.10.RELEASE/reference/htmlsingle/#howto-spring-mvc
+#org.springframework.boot.autoconfigure.web.WebMvcProperties
+#    mvc:
+#        view:
+#            prefix: /WEB-INF/jsp/
+#            suffix: .jsp

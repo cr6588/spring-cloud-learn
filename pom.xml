@@ -1,5 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cr6588</groupId>
     <artifactId>spring-cloud-learn</artifactId>
@@ -15,7 +15,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.0.4.RELEASE</version>
 <!--         <version>1.5.13.RELEASE</version> -->
-        <relativePath />
+        <relativePath/>
     </parent>
     <!-- 有dependencyManagement管理版本不会形成依赖，子项目无需写版本信息 -->
     <dependencyManagement>
@@ -88,6 +88,8 @@
         <module>spring-boot-mybatis</module>
 <!--         <module>spring-data-jpa-dubbo-provider</module> -->
         <module>spring-mq</module>
+    <module>sprint-boot-web-init</module>
+    <module>elastic-job-demo</module>
     </modules>
     <build>
         <plugins>
